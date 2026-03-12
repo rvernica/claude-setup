@@ -77,7 +77,7 @@ The `config.toml` sets `claude_code_cmd` to the wrapper, so roborev invokes `cla
 
 ### Spinner Messages
 
-Edit the `spinnerVerbs.verbs` array in `settings.json`. Set `mode` to `"append"` instead of `"replace"` to keep the defaults alongside your custom messages.
+Edit the `spinnerVerbs.verbs` array in `settings.json`. Set `mode` to `"append"` instead of `"replace"` to keep the defaults alongside your custom messages. The verb list is based on [this gist by topherhunt](https://gist.github.com/topherhunt/b7fa7b915d6ee3a7998363d12dc8c842).
 
 ### Sound Packs & Volume
 
