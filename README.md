@@ -9,6 +9,7 @@ A shareable collection of Claude Code configurations: custom status line, motiva
 - **`peon-ping/config.json`** — Default peon-ping config (peasant sound pack, 50% volume)
 - **`roborev/claude-roborev`** — Wrapper script that launches Claude with a separate peon-ping config directory for roborev code reviews
 - **`roborev/peon-ping-config.json`** — Roborev-specific peon-ping config (sc_battlecruiser sound pack)
+- **`roborev/config.toml`** — Roborev daemon config pointing `claude_code_cmd` at the wrapper
 
 ## Prerequisites
 
@@ -64,9 +65,13 @@ cp roborev/peon-ping-config.json ~/.claude/hooks/peon-ping-roborev/config.json
 # Install the wrapper script
 cp roborev/claude-roborev ~/.local/bin/claude-roborev
 chmod +x ~/.local/bin/claude-roborev
+
+# Copy the roborev daemon config
+mkdir -p ~/.roborev
+cp roborev/config.toml ~/.roborev/config.toml
 ```
 
-Then use `claude-roborev` instead of `claude` when running roborev — it sets `CLAUDE_PEON_DIR` to use the sc_battlecruiser sound pack so you can tell roborev sessions apart by sound.
+The `config.toml` sets `claude_code_cmd` to the wrapper, so roborev invokes `claude-roborev` which sets `CLAUDE_PEON_DIR` to use the sc_battlecruiser sound pack. This way you can tell roborev sessions apart by sound.
 
 ## Customization
 
@@ -80,7 +85,3 @@ Edit `peon-ping/config.json` (or `roborev/peon-ping-config.json`):
 - `active_pack` — change the sound pack (e.g., `"peasant"`, `"sc_battlecruiser"`)
 - `volume` — `0.0` to `1.0`
 - `categories` — toggle which events trigger sounds
-
-### Plugins
-
-The `enabledPlugins` section in `settings.json` enables Atlassian, GitHub, and gopls LSP plugins. Remove any you don't need.
