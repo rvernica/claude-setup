@@ -1,0 +1,212 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(file:*)",
+      "Bash(stat:*)",
+      "Bash(du:*)",
+      "Bash(df:*)",
+      "Bash(echo:*)",
+      "Bash(pwd:*)",
+      "Bash(which:*)",
+      "Bash(env:*)",
+      "Bash(printenv:*)",
+      "Bash(sort:*)",
+      "Bash(uniq:*)",
+      "Bash(cut:*)",
+      "Bash(tr:*)",
+      "Bash(jq:*)",
+      "Bash(column:*)",
+      "Bash(git log:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git show:*)",
+      "Bash(git blame:*)",
+      "Bash(git stash list:*)",
+      "Bash(git describe:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(git ls-files:*)",
+      "Bash(git shortlog:*)",
+      "WebSearch",
+      "Read",
+      "Bash(pytest:*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/peon-ping/peon.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
+  },
+  "enabledPlugins": {
+    "atlassian@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "gopls-lsp@claude-plugins-official": true
+  },
+  "spinnerVerbs": {
+    "mode": "replace",
+    "verbs": [
+      "The electric fence stopped working years ago",
+      "You already know the answer",
+      "Comfort is the expensive kind of stuck",
+      "The map is not the territory",
+      "You're rehearsing a fear, not a fact",
+      "What you resist persists",
+      "The obstacle is the way",
+      "You're not behind schedule",
+      "Done beats perfect every time",
+      "The story you tell yourself is optional",
+      "You don't need permission",
+      "You deserve rest. Rest is not retreat",
+      "Avoidance has compound interest",
+      "The wall is thinner than you think",
+      "Your comfort zone shrinks if you let it",
+      "What would you do if you weren't afraid",
+      "Ask yourself who you've loved today",
+      "Start before you're ready",
+      "The only way out is through",
+      "Adab and self-commitment compounds quickly",
+      "Take up the blueprint. You are the only one who can. You have seen it",
+      "Anxiety is paying interest on a debt you may not owe",
+      "The leash is in your own hand",
+      "Perfectionism is fear in a lab coat",
+      "What you practice, you become",
+      "The script can be rewritten",
+      "Discomfort is data, not danger",
+      "You're allowed to outgrow people",
+      "The bottleneck is usually you",
+      "Overthinking is underacting",
+      "Progress requires proof of work",
+      "You already have enough to begin",
+      "Tension is where growth lives",
+      "Your excuses are getting expensive",
+      "Scar tissue is stronger than skin",
+      "You're not fragile",
+      "What got you here won't get you there",
+      "The best time was yesterday. The next best time is now",
+      "Identity is a daily practice",
+      "Nobody is coming to save you",
+      "Comparison is a rigged game",
+      "You're allowed to change your mind",
+      "The weight was always yours to put down",
+      "Easy choices, hard life. Hard choices, easy life",
+      "You can't think your way to courage",
+      "Ships are safe in harbor but that's not what ships are for",
+      "You're not waiting. You're hiding",
+      "Momentum forgives a lot of sins",
+      "Inaction is a form of action",
+      "Ruts are self-reinforcing",
+      "You're stronger than the story",
+      "Growth isn't linear",
+      "The chains are mostly imaginary",
+      "You're the only one keeping score",
+      "Do the thing that scares you before breakfast",
+      "Regret outweighs risk almost every time",
+      "You were not built to be comfortable",
+      "Surrender the illusion of control",
+      "The path appears when you walk",
+      "You teach people how to treat you",
+      "Every interaction is a chance to permanently touch someone's heart",
+      "Your limits are a conversation, not a wall",
+      "You're one open-hearted conversation away from a new opportunity",
+      "Being wrong is faster than being uncertain",
+      "You already know what to do",
+      "Resistance is a signal",
+      "Stay true to your heart, no matter what",
+      "Do not leave yourself",
+      "Potential has a shelf life",
+      "You can't steer a parked car",
+      "Growth requires sacrifice, not suffering",
+      "Your future self is watching",
+      "Deep self-development is the best possible investment you can make",
+      "Ask yourself what you're putting energy into lately",
+      "Stay with it. Boring and uncomfortable point to breakthrough",
+      "It's supposed to be hard. That's what makes it worth it",
+      "Trust the version of you that decided to start",
+      "Begin again, as many times as it takes",
+      "Life optimizes outcomes for those who ask for what they want"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+#!/bin/bash
+CLAUDE_PEON_DIR="$HOME/.claude/hooks/peon-ping-roborev" exec claude "$@"
